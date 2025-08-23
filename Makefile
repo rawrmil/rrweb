@@ -2,9 +2,9 @@ LIB=lib/mongoose.o
 INC=-I./lib
 BIN=rrwebsite
 
-all: mongoose main
+all: prebuild main
 
-mongoose:
+prebuild:
 	gcc -c lib/mongoose/mongoose.c -o lib/mongoose.o
 
 main:
